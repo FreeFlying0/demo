@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css版</title>
+    <link rel="stylesheet" href="/dist/css/index.css">
+</head>
+<body>
+    <p>
+        建议:<br/>
+        1.标签缩进不符合标准;<br/>
+        2.input等自关闭标签加/结束;<br/>
+        3.css不建议加important;<br/>
+        4.a标签的href属性不能为空，可以为#，为空时用其他元素代替
+    </p>
+    <div class="fixeRight">
+       <ul>
+           <li class="mes">
+               <a href="#"></a>
+            </li>
+           <li class="phone">
+                <a href="javascript:;">
+                    <form action="">
+                        <input type="text" placeholder="请输入您的电话号码"/>
+                        <input type="submit" value="免费回电"/>
+                    </form>
+                </a>
+            </li>
+            <li id="order" class="order">
+                <a href="javascript:;">
+                    <div id="form" class="form">
+                        <form action="">
+                            <span>您的姓名：</span>
+                            <input type="text"/>
+                            <span>您的电话：</span>
+                            <input type="text"/>
+                            <span>预约医生：</span>
+                            <input type="text"/>
+                            <input type="submit" value="提交预约"/>
+                        </form>
+                    </div>
+                </a>
+           </li>
+           <li class="wx">
+               <a href="#">
+               </a>
+               <img src="/dist/images/wxm.png" alt=""/>
+            </li>
+           <li class="qq">
+               <a href="#"></a>
+            </li>
+           <li class="top">
+               <a href="#"></a>
+            </li>
+       </ul>
+   </div>
+
+    <script src="/dist/js/index.js"></script>
+</body>
+</html>

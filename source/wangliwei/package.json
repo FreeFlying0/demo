@@ -1,0 +1,32 @@
+{
+  "name": "bianlan",
+  "version": "1.0.0",
+  "description": "shenbao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "shenbao"
+  },
+  "keywords": [
+    "shenbao"
+  ],
+  "author": "shenbao <shenbaoone@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rev": "^7.1.0",
+    "gulp-rev-collector": "^1.0.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-webpack": "^1.5.0",
+    "gulp-webserver": "^0.9.1",
+    "imports-loader": "^0.6.5",
+    "node-sass": "^4.5.1",
+    "vinyl-named": "^1.1.0"
+  }
+}
