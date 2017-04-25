@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+        <title>RunJS</title>  
+    <script id="jquery_183" type="text/javascript" class="library" src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>  
+    </head>  
+    <body>  
+        <h1 >  
+            实时监测input中值的变化  
+        </h1>  
+        <input type="text" id="username" autoComplete='off'>  
+        <div id="result"></div> 
+
+        <script>
+            $(function(){  
+            
+                $('#username').bind('input propertychange', function() {  
+                    console.log($(this).val())
+                    $('#result').html($(this).val().length + ' characters');  
+                });  
+            
+            })  
+        </script>
+    </body>  
+</html>  
