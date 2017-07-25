@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+</head>
+<body>
+    <div class="box" id="box">
+        <ul id="selected-address">
+            还没有地址
+        </ul>
+        <button class="btn" id="btn">去选择</button>
+    </div>
+
+    <div id="list">
+        <ul>
+            <li>
+                name：test <br/>
+                address：address <br/>
+                tel： tel 
+            </li>
+        </ul>
+         <button id="go-add">去添加</button>
+    </div>
+
+    <div class="add-address" id="add-address">
+        <p>nema：<input type="text" id="name"></p>
+        <p>address：<input type="text" id="address"></p>
+        <p>tel：<input type="text" id="tel"></p>
+        <button id="add-btn">添加</button>
+    </div>
+
+    <script src="./static/zepto.min.js"></script>
+    <script src="./static/address.js"></script>
+</body>
+</html>
