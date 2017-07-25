@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.1</title>
+    <script src="./jquery-1.11.2.js"></script>
+</head>
+<body>
+    <h3>这是1.1</h3>
+    <button>打开子窗口 1.2</button>
+    <button>获取1信息</button>
+    <button>获取1.2信息</button>
+
+    <script>
+        $('button').eq(0).click(function(){
+            window.WinOpen2 = window.open(
+                '/1.2.html', 
+                '_blank',
+                'width=500,height=400,top=200,left=400'
+            );
+        });
+        
+        $('button').eq(1).click(function(){
+            window.WinOpenMain = window.opener;
+            var str = window.WinOpenMain.$('body').html()
+            console.log(str)
+        });
+         $('button').eq(2).click(function(){
+            var str = window.WinOpen2.$('body').html();
+            console.log(str)
+        });
+    </script>
+</body>
+</html>
