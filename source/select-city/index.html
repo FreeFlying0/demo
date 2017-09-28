@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShenBao shenbao.china@gmail.com</title>
+</head>
+<body>
+
+    <select id="cmbProvince" name="cmbProvince"></select>
+    <select id="cmbCity" name="cmbCity"></select>
+    <select id="cmbArea" name="cmbArea"></select>
+
+    <!-- <script type="text/javascript" src="data.js"></script> -->
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./jsAddress.js"></script>
+
+    <script type="text/javascript">
+    
+        // addressInit(provinceList, 'cmbProvince', 'cmbCity', 'cmbArea');
+        // addressInit(provinceList, 'cmbProvince', 'cmbCity', 'cmbArea', 2, 103, 100008);
+        
+        $.ajax({  
+            type:"get",  
+            url:"data.json",  
+            dataType: "json",  
+            success: function(res){ 
+                if(res.code !=200 ){
+                    console.log(err);
+                    return;
+                }
+                addressInit(res.data, 'cmbProvince', 'cmbCity', 'cmbArea', 2, 103, 100008);
+            }  
+        });  
+    </script>
+</body>
+</html>
