@@ -1,0 +1,99 @@
+{
+    "status": 200,
+    "message": "成功",
+    "debug": null,
+    "attachment": [
+        {
+            "paymentId": 666,
+            "payTime": 1503070059000,
+            "totalPrice": 1,
+            "totalNumber": 2,
+            "userNick": "婵娟",
+            "userIcon": 63370,
+            "detailList": [
+                {
+                    "icon": 8,
+                    "name": "提拉米苏",
+                    "price": 2,
+                    "number": 1
+                }
+            ]
+        },
+        {
+            "paymentId": 1655,
+            "payTime": 1503069758000,
+            "totalPrice": 1,
+            "totalNumber": 1,
+            "userNick": "紫薇",
+            "userIcon": 2384,
+            "detailList": [
+                {
+                    "icon": 20,
+                    "name": "小茗同学",
+                    "price": 1,
+                    "number": 1
+                }
+            ]
+        },
+        {
+            "paymentId": 1666,
+            "payTime": 1503070059000,
+            "totalPrice": 1,
+            "totalNumber": 2,
+            "userNick": "贺岩",
+            "userIcon": 1675,
+            "detailList": [
+                {
+                    "icon": 8,
+                    "name": "香飘飘奶茶",
+                    "price": 2,
+                    "number": 1
+                }
+            ]
+        },
+        {
+            "paymentId": 1658,
+            "payTime": 1503070059000,
+            "totalPrice": 1,
+            "totalNumber": 2,
+            "userNick": "小雨",
+            "userIcon": 2450,
+            "detailList": [
+                {
+                    "icon": 15,
+                    "name": "绿箭32g金装薄荷味口香糖",
+                    "price": 200,
+                    "number": 1
+                },
+                {
+                    "icon": 8,
+                    "name": "老奶奶花生米",
+                    "price": 2,
+                    "number": 1
+                }
+            ]
+        },
+        {
+            "paymentId": 88888,
+            "payTime": 1503070059000,
+            "totalPrice": 1,
+            "totalNumber": 2,
+            "userNick": "",
+            "userIcon": 0,
+            "detailList": [
+                {
+                    "icon": 15,
+                    "name": "绿箭32g金装薄荷味口香糖",
+                    "price": 200,
+                    "number": 1
+                },
+                {
+                    "icon": 8,
+                    "name": "老奶奶花生米",
+                    "price": 2,
+                    "number": 1
+                }
+            ]
+        }
+    ]
+}

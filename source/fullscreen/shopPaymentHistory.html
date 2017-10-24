@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>店铺销售记录 - 无人智能超市</title>
+
+
+    <link rel="stylesheet" href="/css/shopPaymentHistory.css">
+    <script src="/js/zepto.js"></script>
+    <script src="/js/vue.min.js"></script>
+</head>
+
+<body id="fullscreen">
+    <div id="root">
+        <div v-if="orderList.length == 0">
+            <p class="order-null">
+                暂无订单信息
+            </p>
+        </div>
+        <div v-else>
+            <ul class="list">
+                <li class="item" v-for="(orderItem, orderIndex) in orderList" :key="orderItem.paymentId">
+                    <div class="order-header">
+                        <div class="user-icon">
+                            <img v-if="orderItem.userIcon" v-bind:src="'http://img.starft.cn/dmstore/p/' + orderItem.userIcon">
+                            <img v-else src="http://static.starft.cn/mt227/dmstore/img/dmshop/default_head.jpg" alt="">
+                        </div>
+                        <div class="user-name">
+                            {{ orderItem.userNick ? orderItem.userNick : '未采集到用户名' }}
+                        </div>
+                        <div class="purchase-time">
+                            {{ util.getTimeFormat(orderItem.payTime, 'yyyy-MM-dd HH:mm:ss') }}
+                        </div>
+                    </div>
+                    <ol>
+                        <li class="goods" v-for="goodsItem in orderItem.detailList">
+                            <p class="goods-name">{{ goodsItem.name }}</p>
+                            <div class="goods-info">
+                                <p class="goods-peice">￥{{ util.centsToYuan(goodsItem.price) }}</p>
+                                <p class="goods-number">x{{ goodsItem.number }}</p>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="order-footer">
+                        <span class="order-state">
+                        </span>
+                        <span class="order-total">
+                            共{{ orderItem.totalNumber }}件 / 合计: ￥{{ util.centsToYuan(orderItem.totalPrice) }}
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        window.shopCode = '${shopCode}';
+    </script>
+    <script src="/js/shopPaymentHistory.js"></script>
+</body>
+
+</html>
