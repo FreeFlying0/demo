@@ -1,0 +1,119 @@
+{
+    "Data": [
+        {
+            "ID": "Root",
+            "Name": "山西移动公司",
+            "Type": 0,
+            "PID": "",
+            "ListRec": [
+                {
+                    "ID": "ID杭州市",
+                    "Name": "杭州市",
+                    "Type": 0,
+                    "PID": "Root",
+                    "ListRec": [
+                        {
+                            "ID": "ID市公司1",
+                            "Name": "市公司",
+                            "Type": 1,
+                            "PID": "ID杭州市",
+                            "ListRec": [
+                                {
+                                    "ID": "ID市场部",
+                                    "Name": "市场部",
+                                    "Type": 1,
+                                    "PID": "ID市公司1",
+                                    "ListRec": []
+                                },
+                                {
+                                    "ID": "ID网络部",
+                                    "Name": "网络部",
+                                    "Type": 1,
+                                    "PID": "ID市公司1",
+                                    "ListRec": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ID": "ID宁波市",
+                    "Name": "宁波市",
+                    "Type": 0,
+                    "PID": "Root",
+                    "ListRec": [
+                        {
+                            "ID": "ID市公司2",
+                            "Name": "市公司2",
+                            "Type": 1,
+                            "PID": "ID宁波市",
+                            "ListRec": [
+                                {
+                                    "ID": "ID市场部1",
+                                    "Name": "市场部2",
+                                    "Type": 1,
+                                    "PID": "ID市公司2",
+                                    "ListRec": []
+                                },
+                                {
+                                    "ID": "ID网络部1",
+                                    "Name": "网络部2",
+                                    "Type": 1,
+                                    "PID": "ID市公司2",
+                                    "ListRec": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "Root",
+            "Name": "北京",
+            "Type": 0,
+            "PID": "",
+            "ListRec": [
+                {
+                    "ID": "东城",
+                    "Name": "东城",
+                    "Type": 0,
+                    "PID": "Root",
+                    "ListRec": [
+                        {
+                            "ID": "ID市公司1",
+                            "Name": "东城公司",
+                            "Type": 1,
+                            "PID": "ID杭州市",
+                            "ListRec": [
+                                {
+                                    "ID": "ID市场部",
+                                    "Name": "市场部",
+                                    "Type": 1,
+                                    "PID": "ID市公司1",
+                                    "ListRec": []
+                                },
+                                {
+                                    "ID": "ID网络部",
+                                    "Name": "网络部",
+                                    "Type": 1,
+                                    "PID": "ID市公司1",
+                                    "ListRec": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ID": "ID海淀",
+                    "Name": "海淀",
+                    "Type": 0,
+                    "PID": "Root",
+                    "ListRec": []
+                }
+            ]
+        }
+    ],
+    "State": 0,
+    "Describe": null
+}
