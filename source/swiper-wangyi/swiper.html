@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 80px;
+            overflow: visible;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            border-right: 1px solid rebeccapurple;
+
+        }
+
+        .box {
+            padding-top: 100px;
+            /*width:800px;
+            overflow: hidden;*/
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">1</div>
+                <div class="swiper-slide">2</div>
+                <div class="swiper-slide">3</div>
+                <div class="swiper-slide">4</div>
+                <div class="swiper-slide">5</div>
+                <div class="swiper-slide">6</div>
+                <div class="swiper-slide">7</div>
+                <div class="swiper-slide">8</div>
+                <div class="swiper-slide">9</div>
+                <div class="swiper-slide">10</div>
+            </div>
+            <!-- Add Pagination -->
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            paginationClickable: true,
+            notNextTick: true,
+            centeredSlides: true,
+            loop: true,
+            loopAdditionalSlides: 2,
+            slideToClickedSlide: true,
+            spaceBetween: 30,
+            watchSlidesProgress: true,
+            observer: true,
+            observeParents: true,
+            hashnav: true,
+            replaceState: true,
+            onSetTranslate: function (swiper) {
+
+                for (var e = 0, a = swiper.slides.length; e < a; e++) {
+                    var slides = swiper.slides.eq(e),
+                        progress = slides[0].progress,
+                        yy = 1.2 * swiper.width * (1 - Math.cos(Math.PI / 18 * Math.abs(progress))),
+                        rotateZ = 10 * -progress, o = .2 * (1 - Math.min(Math.abs(progress), 1)) + 1;
+                    slides.transform("translate3d(0px," + yy + "px,0px)  rotateZ(" + rotateZ + "deg)");
+                    //console.log(slides);
+                    //slides[0].style.transitionDuration = '0ms';
+                }
+            },
+            onTouchEnd: function (swiper) {
+
+                for (var e = 0, a = swiper.slides.length; e < a; e++) {
+                    var slides = swiper.slides.eq(e);
+
+                    //console.log(slides);
+                    slides[0].style.transitionDuration = '300ms';
+                }
+            },
+            onTouchMove: function (swiper) {
+                for (var e = 0, a = swiper.slides.length; e < a; e++) {
+                    var slides = swiper.slides.eq(e);
+
+                    //console.log('00000----------->>>>>>>>>');
+                    slides[0].style.transitionDuration = '0ms';
+                }
+            },
+            onSlideChangeEnd: function (swiper) {
+                for (var e = 0, a = swiper.slides.length; e < a; e++) {
+                    var slides = swiper.slides.eq(e);
+
+                    //console.log('00000----------->>>>>>>>>');
+                    slides[0].style.transitionDuration = '0ms';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
