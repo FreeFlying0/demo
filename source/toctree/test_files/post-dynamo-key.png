@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mensu's Blog">
+  <meta name="keywords"  content="">
+
+  <title>Mensu - 思考のかけら | fragments of thought</title>
+
+  <link rel="canonical" href="https://mensu.github.io/404.html">
+  <link rel="stylesheet" href="/css/mensu-blog.min.css">
+  <script src="/js/outputs/commons-sync.min.js"></script>
+</head>
+
+  <body>
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <!-- Known Issue, found by Hux:
+          <nav>'s height woule be hold on by its content.
+          so, when navbar scale out, the <nav> will cover tags.
+          also mask any touch event of tags, unfortunately.
+      -->
+      <div id="huxblog_navbar">
+        <div class="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            
+              
+            
+              
+                <li>
+                  <a href="/about.html">About</a>
+                </li>
+              
+            
+              
+            
+              
+            
+              
+                <li>
+                  <a href="/tags.html">Tags</a>
+                </li>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+    <!-- Page Header -->
+<header class="intro-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading" id="tag-heading">
+					<h1>404</h1>
+					<span class="subheading">你来到了没有知识的荒原 :(</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<script>
+	document.body.classList.add('page-fullscreen');
+</script>
+
+    <!-- Footer -->
+<div id="backtotop">
+  <div class="backtotop-btn">
+    <div class="arrow-upward"></div>
+    <div class="vertical-stick"></div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="footer
+                  col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          <!--
+          <li>
+              <a href="/feed.xml">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </li>
+          -->
+          
+          <li>
+            <a href="https://github.com/Mensu" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="http://weibo.com/yxshw55" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://twitter.com/mensuhamesu" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">
+          
+          Copyright &copy; Mensu 2016 - 2018
+          <br/>
+          Theme edited by <a href="https://github.com/Mensu">Mensu</a> |
+          <iframe frameborder="0" scrolling="0" src="https://ghbtns.com/github-btn.html?user=Mensu&repo=mensu.github.io&type=star&count=true" >
+          </iframe>
+          <br/>
+          forked from <a href="http://huangxuan.me">Hux</a> |
+          <iframe frameborder="0" scrolling="0" src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+          </iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script class="site-options">
+  var siteOptions;
+  if (!siteOptions) siteOptions = {};
+  
+    // duoshuo
+    window.duoshuoQuery = siteOptions.duoshuoQuery = {
+      "short_name": "mensu"
+    };
+  
+  
+  
+    // mathjax
+    siteOptions.mathjax = true;
+  
+  
+</script>
+<script src="/js/outputs/commonpage.min.js"></script>
+
+  </body>
+</html>
